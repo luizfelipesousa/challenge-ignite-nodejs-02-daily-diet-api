@@ -1,0 +1,34 @@
+{
+  "name": "02-desafio-daily-diet-api",
+  "version": "1.0.0",
+  "description": "- Deve ser possível criar um usuário\r - Deve ser possível identificar o usuário entre as requisições\r - Deve ser possível registrar uma refeição feita, com as seguintes informações:",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "knex": "knex migrate:make",
+    "knex:latest": "knex migrate:latest",
+    "knex:rollback": "knex migrate:rollback --all",
+    "test": "vitest",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/supertest": "^2.0.12",
+    "sqlite3": "^5.1.6",
+    "supertest": "^6.3.3",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.0"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@types/node": "^20.1.5",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.17.0",
+    "knex": "^2.4.2",
+    "tsup": "^6.7.0",
+    "zod": "^3.21.4"
+  }
+}
